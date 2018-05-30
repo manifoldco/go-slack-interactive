@@ -1,3 +1,3 @@
 FROM alpine
-ADD app /app
+ADD bot /app
 CMD ["./app"]

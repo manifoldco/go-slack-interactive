@@ -17,7 +17,7 @@ export VERIFICATION_TOKEN="***"  // you can get this after enable interactive me
 export CHANNEL_ID="C***"         // bot reacts only this channel
 ```
 
-To run this, 
+To run this,
 
 ```bash
 $ dep ensure
@@ -29,3 +29,18 @@ To run this local, use `ngrok` (See more about it [here](https://api.slack.com/t
 ## References
 
 - https://github.com/slackapi/sample-message-menus-node
+
+
+## ToDo
+- makefile that has a container build see : https://github.com/manifoldco/deployhelper/blob/master/makefile as References
+- ship container to hub
+- test on hyper
+- change drop down to be choosing what product to make an issue for
+- pull in code from shipit
+- test creating of github issue via slack bot
+
+## Future works
+- have it make the tags in GH after user just type in the version number
+- something like : make release issue for v1.0.0
+  - triggers making release issue AND tag -rc.0
+- add a "new tag command": what product -> release or rc -> give number
